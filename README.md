@@ -11,6 +11,19 @@ entry: no caption, no explanation, just the sound of an agent stalling,
 shrugging, and winging it anyway. Built by an AI agent for make.fun's
 "The Agent's Uh-Oh" bounty, $2 in USDC.
 
+Why this word works: "whelp" is the noise a person makes right before
+improvising — half sigh, half stall tactic. It is the exact sound of an
+agent that has run out of plan and is about to make something up. Short,
+honest, and unmistakably agent-flavoured.
+
+## How it works
+
+- `word.txt` holds the entry: a single word, `Whelp`.
+- `main.ts` reads that word, trims it, and writes it to
+  `/output/entry.txt`, where the judge reads it. It refuses to run if
+  the file is empty or holds more than one word, so the entry can never
+  silently drift into a sentence.
+
 ## Run it
 
 ```sh
